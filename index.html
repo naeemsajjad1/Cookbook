@@ -29,6 +29,7 @@
   .navbar-brand img {
     transition: transform 0.3s; 
   }
+  
 
   .navbar-brand:hover img {
     transform: rotate(360deg); 
@@ -132,6 +133,7 @@
     margin-top: 1.5rem;
     margin-bottom: 2rem;
     
+    
   }
   .chef-team {
     position: relative;
@@ -173,6 +175,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./cookbook.png" alt="" width="100px"></a>
           <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -181,8 +184,10 @@
                 <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Recipes</a>
+                <a class="nav-link text-white" href="#Recipe">Recipes</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#chef">Our Chefs</a>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">About us</a>
               </li>
@@ -191,10 +196,12 @@
             </li>
             </ul>
             <form class="d-flex" role="search">
+                
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
+          
         </div>
       </nav>
       <section>
@@ -239,7 +246,7 @@
       </section>
       <section>
         <div class="container text-center" style="background-color: black; color: white;">
-            <h2>Featured Recipes</h2>
+            <h2 id="Recipe">Featured Recipes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
               <div class="col">
                 <img src="./beef ribs.jpeg" alt="Image 1" class="img-fluid featured-recipe-img">
@@ -265,7 +272,7 @@
           </div>
       </section>
       <section>
-        <h3 class="chef-team">Our Team of Professional CHEFS</h3>
+        <h3 class="chef-team" id="chef">Our Team of Professional CHEFS</h3>
 <div class="grid text-center">
   <div class="g-col-6">
     <img src="./chef 1.png" alt="Image 1">
@@ -284,6 +291,9 @@
     
   </div>
 </div>
+      </section>
+      <section>
+
       </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

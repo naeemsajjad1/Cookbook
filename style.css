@@ -1,8 +1,0 @@
-.navbar-nav .nav-item {
-    border: 1px solid white; /* Added border styles */
-    border-radius: 5px; /* Added border radius */
-    margin: 5px; /* Added margin for spacing */
-  }
-  .navbar-nav .nav-link {
-    color: white !important; /* Ensured the text color remains white */
-  }
