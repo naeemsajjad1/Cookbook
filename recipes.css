@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --main-color: #3DADAB
+}
+.card{
+  margin-top: 2rem;
+  width: 18rem;
+  margin-bottom: 4rem;
+}
+.link-primary{
+  color: var(--main-color);
+  text-decoration: none;
+}
+.btn-primary{
+  background-color: var(--main-color);
+}
