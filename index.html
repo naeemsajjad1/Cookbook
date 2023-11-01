@@ -37,37 +37,125 @@
   #custom-toggler.navbar-toggler-icon {
     color: white !important; /* Added !important to ensure it takes precedence */
   }
-  <style>
-  /* Custom CSS for images */
-  .carousel-container {
-    position: relative;
-    z-index: 1;
-    
-  }
-
-  .carousel {
-    position: relative;
-    z-index: 2;
-  
-  }
-
-  .carousel img {
-    width: 100%;
-    height: auto;
-    
-  }
-
-  .image-container {
+  /* nav bar gif start*/
+  .navbar-center {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; /* Adjust the gap as needed */
-  }
+    align-items: center;
+    height: 100%;
+}
 
-  .image-container .col {
-    flex: 0 0 calc(25% - 20px); /* Adjust the width and gap as needed */
+/* Style for the centered image */
+.navbar-center img {
+    width: 100px; /* Set the width of your centered image */
+    height: auto; /* Maintain the aspect ratio */
+    transition: transform 0.3s; /* Optional: add a hover effect */
     
+}
+
+  /*nav bar gif end*/
+  .title-page, .p-title
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #ebe5f0 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  
+  border-radius: 20%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
   }
+}
+/*Drop Down Start*/
+.cta-section {
+    background-color: #ffd700;
+    padding: 30px;
+    color: black;
+}
+
+.cta-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.cta-section .btn {
+    background-color: #ff1361;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.cta-section .cta-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cta-image {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin: 0 20px; /* Adjust the margin as needed */
+}
+
+
+.cta-section .btn:hover {
+    background-color: #fff800;
+}
+.cta-images img:hover:{
+  transform: scale(1.1);
+}
+
+
+/*Drop Down End*/
+/*carousel css start*/
+.cook-book1 img{
+ width: 60%;
+ height: 60vh;
+ border: solid 1px;
+}
+.cook-book1{
+text-align: center;
+margin-top: 30px;
+margin-bottom: 30px;
+
+}
+.cook-book1 img:hover{
+  transform: scale(1.1);
+}
+
+/*carousel css end*/
+ 
  /* Recipes images animation */
  .col {
     position: relative;
@@ -84,6 +172,46 @@
     
     
   }
+/* Style for the heading container */
+/* Style for the heading container */
+.styled-heading {
+    position: relative;
+    background: linear-gradient(-225deg, #231557 0%, #ebe5f0 29%, #ff1361 67%, #fff800 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Add pseudo-elements for shapes */
+.styled-heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, #ff1361 0%, #231557 100%);
+    opacity: 0.5;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.styled-heading::after {
+    
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+    transform: translateY(-50%);
+}
+
 
   
   .col p {
@@ -167,13 +295,16 @@
     
   }
   }
+   /*Footer section start */
+   
+  /* footer section end*/
 </style>
-
-  
       </style>
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./cookbook.png" alt="" width="100px"></a>
+          
+
           <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             
             <span class="navbar-toggler-icon"></span>
@@ -195,6 +326,7 @@
                 <a class="nav-link text-white" href="#">Contact us</a>
             </li>
             </ul>
+            <a class="navbar-center" href="#"><img src="./giphy (1).gif" alt="Centered Image"></a>
             <form class="d-flex" role="search">
                 
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -205,47 +337,29 @@
         </div>
       </nav>
       <section>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./pexels-photo-4393021.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Delicious Recipe 1</h5>
-                    <p>Discover the flavors of this amazing dish.</p>
-                  </div>
+        <section class="cta-section text-center">
+          <div class="container">
+              <h3>Discover the Taste of Our Signature Dishes</h3>
+              <p>Explore our mouthwatering recipes created by our talented chefs.</p>
+              <div class="cta-images">
+                  <img src="./burger1.png" alt="Left Image" class="cta-image">
+                  <a class="btn btn-primary" href="#Recipe">View Recipes</a>
+                  <img src="./burger2.png" alt="Right Image" class="cta-image">
               </div>
-              <div class="carousel-item">
-                <img src="./pexels-photo-70497.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Irresistible Treats</h5>
-                    <p>Indulge in the sweet pleasure of our Chips and Burgers Recipes.</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./pexels-photo-8969237.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Exquisite Cuisine</h5>
-                    <p>Experience the art of fine cooking.</p>
-                  </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
       </section>
+      </section>
+      <div class="title-page">
+        <h2>Welcome to Code & Cook!</h2>
+        <p class="p-title">A full stack flavor cooking book for web developers.</p>
+      </div>      
       <section>
-        <div class="container text-center" style="background-color: black; color: white;">
+        <div class="cook-book1">
+          <img src="./2.jpg" alt="">
+        </div>
+      </section>
+      <section>
+        <div class="container text-center styled-heading style background-color: black; color: white;">
             <h2 id="Recipe">Featured Recipes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
               <div class="col">
@@ -293,7 +407,7 @@
 </div>
       </section>
       <section>
-
+        
       </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
