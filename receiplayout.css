@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+  color: white;
+}
+      .navbar-nav .nav-item {
+        border: 1px solid white; 
+        border-radius: 5px; 
+        margin: 5px; 
+      }
+    
+      .navbar-nav .nav-link {
+        color: white !important; 
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .navbar-nav .nav-link:hover {
+  background-color: #ffd700; 
+  color: black;
+}
+.navbar-brand img {
+  transition: transform 0.3s; 
+}
+
+.navbar-brand:hover img {
+  transform: rotate(360deg); 
+}
+#custom-toggler.navbar-toggler-icon {
+  color: white !important;
+}
+
+h1 {
+  color: white; 
+  font-size: 35px; 
+  font-weight: bold;
+  font-style: italic;
+}
+
+h2 {
+color: white; 
+font-size: 25px; 
+font-weight: bold;
+font-style: italic;
+margin-top: 15px;
+}
+
+p, li {
+font-size: 20px;
+text-align: justify;
+}
+
+p {
+margin-top: 15px;
+margin-bottom: 5px;
+
+}
+
+.btn-primary {
+  background-color: #ff6600;
+  border-color: #ff5733;
+  font-size: 20px;
+  font-weight: bold;
+}
