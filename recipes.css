@@ -9,8 +9,19 @@
 }
 .card{
   margin-top: 2rem;
-  width: 18rem;
   margin-bottom: 4rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+.slider-bg{
+  border-radius: 50px;
+}
+.slider-bg p {
+  color: black;
+
+}
+.swiper-slides{
+  margin: 2rem;
 }
 .link-primary{
   color: var(--main-color);
@@ -18,4 +29,11 @@
 }
 .btn-primary{
   background-color: var(--main-color);
+}
+
+@media screen and (min-width: 1100px) {
+  .card{
+    margin-right: 5rem;
+    margin-left: 5rem;
+  }
 }
