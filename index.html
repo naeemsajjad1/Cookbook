@@ -24,18 +24,23 @@
         }
         .navbar-nav .nav-link:hover {
     background-color: #ffd700; 
-    color: black;
+    color: rgb(247, 241, 241);
   }
   .navbar-brand img {
     transition: transform 0.3s; 
   }
   
-
+  .navbar-toggler {
+    color: white;
+}
+.navbar-toggler .navbar-toggler-icon {
+    color: white;
+}
   .navbar-brand:hover img {
     transform: rotate(360deg); 
   }
   #custom-toggler.navbar-toggler-icon {
-    color: white !important; /* Added !important to ensure it takes precedence */
+    color: white !important; 
   }
   /* nav bar gif start*/
   .navbar-center {
@@ -43,6 +48,13 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+.centered-animation {
+    display: block;
+    margin: 0px auto;
+    width: 120px; /* Adjust the size as needed */
+    height: auto;
+   
 }
 
 /* Style for the centered image */
@@ -130,10 +142,13 @@
 
 
 .cta-section .btn:hover {
-    background-color: #fff800;
+    background-color: #054a18;
 }
-.cta-images img:hover:{
+.cta-images img:hover{
   transform: scale(1.1);
+}
+.h3-title{
+  color: black;
 }
 
 
@@ -337,10 +352,10 @@ margin-bottom: 30px;
   }
 
   .chef-team:hover {
-    background: #ff6600; /* Background color on hover */
+    background: #eaff00; /* Background color on hover */
   }
   .grid img:hover{
-    background: rgb(241, 110, 110);
+    background: rgb(202, 241, 110);
     transform: scale(1.1);
   }
   @media (max-width: 768px) {
@@ -356,7 +371,89 @@ margin-bottom: 30px;
   }
   }
   /*recipe generator start*/
+  .blog-section {
+  background-color:black; /* Set a background color for the blog section */
+  padding: 50px 0;
+}
+
+
+
+.expert-chef{
+  border: solid 1px;
+  background: linear-gradient(-225deg, #231557 0%, #7b3eae 29%, #ff1361 67%, #fff800 100%);
+  margin-bottom: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.expert-chef:hover{
+  transform: scale(1.1);
+}
+/* CSS for the blog cards */
+.blog-card {
+  background-color:white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Style the blog post images */
+.blog-card img {
+  max-width: 100%;
+  height: 400px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.blog-card:hover{
+  background-color: yellow;
+  transform: scale(1.1);
+}
+/* Style the blog titles */
+.blog-title {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Style the blog date */
+.blog-date {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Style the blog excerpts */
+.blog-excerpt {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Style the "Read More" buttons */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+.blog-card h3 {
+  text-align: center;
   
+}
+
+/* Center the entire blog card content */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
   /*recipe generator end*/
    /*Footer section start */
    .new_footer_area {
@@ -377,14 +474,14 @@ margin-bottom: 30px;
     font-size: 14px;
     font-weight: 300;
     line-height: 20px;
-    color: #7f88a6;
+    color: #ecedf3;
     padding: 27px 0px;
 }
 .new_footer_top .company_widget p {
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
-    color: #6a7695;
+    color: #e6eaf3;
     margin-bottom: 20px;
 }
 .new_footer_top .company_widget .f_subscribe_two .btn_get {
@@ -393,12 +490,12 @@ margin-bottom: 30px;
 }
 .btn_get_two:hover {
     background: transparent;
-    color: #5e2ced;
+    color: #b3ed2c;
 }
 .btn_get:hover {
     color: #fff;
-    background: #6754e2;
-    border-color: #6754e2;
+    background: #c8e254;
+    border-color: #b7e254;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -410,7 +507,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
-    color: #5e2ced;
+    color: #c0ed2c;
+    border: solid 1px;
+    padding: 5px;
 }
 .new_footer_top .f_widget.about-widget .f_list li {
     margin-bottom: 11px;
@@ -482,7 +581,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 .new_footer_top .f-title {
     margin-bottom: 30px;
-    color: #263b5e;
+    color: #e1e7cf;
 }
 .f_600 {
     font-weight: 600;
@@ -491,13 +590,23 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     font-size: 18px;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #4b505e;
+    color: #e2e7d9;
 }
 .new_footer_top .f_widget.about-widget .f_list li a {
-    color: #6a7695;
+    color: #d9e0f0;
 }
 
-
+.f_social_icon{
+  display: flex;
+  
+}
+.f_social_icon img{
+  width: 40px;
+  padding: 5px;
+}
+.f_social_icon img:hover{
+  transform: scale(1.1);
+}
 .new_footer_top .footer_bg {
     position: absolute;
     bottom: 0;
@@ -529,6 +638,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-animation: myfirst 30s linear infinite;
     animation: myfirst 30s linear infinite;
 }
+
 
 
 
@@ -568,9 +678,8 @@ h1, h2, h3, h4, h5, h6 {
           
 
           <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            
             <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -587,8 +696,13 @@ h1, h2, h3, h4, h5, h6 {
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Contact us</a>
             </li>
+            
             </ul>
-            <a class="navbar-center" href="#"><img src="./giphy (1).gif" alt="Centered Image"></a>
+            <div class="navbar-special">
+              <img src="./food/chef gif.gif" alt="Fire Animation" class="centered-animation"> 
+          </div>
+            
+            
             <form class="d-flex" role="search">
                 
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -601,7 +715,7 @@ h1, h2, h3, h4, h5, h6 {
       <section>
         <section class="cta-section text-center">
           <div class="container">
-              <h3>Discover the Taste of Our Signature Dishes</h3>
+              <h3 class="h3-title">Discover the Taste of Our Signature Dishes</h3>
               <p>Explore our mouthwatering recipes created by our talented chefs.</p>
               <div class="cta-images">
                   <img src="./burger1.png" alt="Left Image" class="cta-image">
@@ -664,22 +778,71 @@ h1, h2, h3, h4, h5, h6 {
 <div class="grid text-center">
   <div class="g-col-6">
     <img src="./chef 1.png" alt="Image 1">
+    <h3>David Konway</h3>
     
   </div>
   <div class="g-col-6">
     <img src="./chef png1.png" alt="Image 2">
+    <h3>Stefen Fur</h3>
     
   </div>
   <div class="g-col-6">
     <img src="./chef png 2.png" alt="Image 3">
+    <h3>Micheal Burg</h3>
     
   </div>
   <div class="g-col-6">
     <img src="./chef png 3.png" alt="Image 4">
+    <h3>Raza Hadid</h3>
     
   </div>
 </div>
       </section>
+      <section class="blog-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="styled-heading text-center expert-chef">Cooking Tips & Blog by our Expert Chef's</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="blog-card">
+                <img src="./food/kitchen hacks.jpeg" alt="Blog Image 1">
+                <h3 class="blog-title">Top 10 Kitchen Hacks</h3>
+                <p class="blog-date">Published on October 10, 2023</p>
+                <p class="blog-excerpt">
+                  Here are some amazing kitchen hacks to make your cooking experience easier and more efficient.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="blog-card">
+                <img src="./food/art of spices.jpeg" alt="Blog Image 2">
+                <h3 class="blog-title">The Art of Spices</h3>
+                <p class="blog-date">Published on September 20, 2023</p>
+                <p class="blog-excerpt">
+                  Learn about different spices and how to use them to enhance the flavors of your dishes.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="blog-card">
+                <img src="./food/easy breakfast.jpeg" alt="Blog Image 3">
+                <h3 class="blog-title">Quick & Easy Breakfast Ideas</h3>
+                <p class="blog-date">Published on August 15, 2023</p>
+                <p class="blog-excerpt">
+                  Start your day right with these delicious and quick breakfast recipes.
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <section>
         <footer class="new_footer_area bg_color">
           <div class="new_footer_top">
@@ -688,7 +851,7 @@ h1, h2, h3, h4, h5, h6 {
                       <div class="col-lg-3 col-md-6">
                           <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
                               <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                              <p>Don’t miss any updates of our new templates and extensions.!</p>
+                              <p>Dont miss to follow us otherwise you could miss some tasty recipe!</p>
                               <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                                   <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
                                   <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
@@ -701,12 +864,12 @@ h1, h2, h3, h4, h5, h6 {
                           <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
                               <h3 class="f-title f_600 t_color f_size_18">Download</h3>
                               <ul class="list-unstyled f_list">
-                                  <li><a href="#">Company</a></li>
+                                  <li><a href="#">Code&Cook History</a></li>
                                   <li><a href="#">Android App</a></li>
                                   <li><a href="#">ios App</a></li>
                                   <li><a href="#">Desktop</a></li>
-                                  <li><a href="#">Projects</a></li>
-                                  <li><a href="#">My tasks</a></li>
+                                  <li><a href="#">Recipe Origins</a></li>
+                                  <li><a href="#">Customer feedback</a></li>
                               </ul>
                           </div>
                       </div>
@@ -725,12 +888,12 @@ h1, h2, h3, h4, h5, h6 {
                       </div>
                       <div class="col-lg-3 col-md-6">
                           <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                              <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                              <h3 class="f-title f_600 t_color f_size_18">Contact us on</h3>
                               <div class="f_social_icon">
-                                  <a href="#" class="fab fa-facebook"></a>
-                                  <a href="#" class="fab fa-twitter"></a>
-                                  <a href="#" class="fab fa-linkedin"></a>
-                                  <a href="#" class="fab fa-pinterest"></a>
+                                  <img src="./icons/facebook.png" alt="facebook">
+                                  <img src="./icons/twitter.png" alt="twitter">
+                                  <img src="./icons/linkedin.png" alt="linkedin">
+                                  <img src="./icons/instagram.png" alt="instagram">
                               </div>
                           </div>
                       </div>
@@ -756,8 +919,8 @@ h1, h2, h3, h4, h5, h6 {
       </footer>
       </section>
       
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
-  </script>
+    
 </body>
 </html>
