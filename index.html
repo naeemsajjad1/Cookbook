@@ -42,7 +42,7 @@
   #custom-toggler.navbar-toggler-icon {
     color: white !important; 
   }
-  /* nav bar gif start*/
+  
   .navbar-center {
     display: flex;
     justify-content: center;
@@ -52,19 +52,44 @@
 .centered-animation {
     display: block;
     margin: 0px auto;
-    width: 120px; /* Adjust the size as needed */
+    width: 120px; 
     height: auto;
    
 }
 
-/* Style for the centered image */
+
 .navbar-center img {
-    width: 100px; /* Set the width of your centered image */
-    height: auto; /* Maintain the aspect ratio */
-    transition: transform 0.3s; /* Optional: add a hover effect */
+    width: 100px; 
+    height: auto; 
+    transition: transform 0.3s; 
     
 }
+/*Dropdown menu styling start*/
 
+.custom-dropdown-menu {
+  background-color: rgb(76, 0, 255); 
+  border: none; 
+  
+}
+
+.custom-dropdown-item {
+  color: #ffffff; 
+}
+
+.custom-dropdown-item:hover {
+  background-color:rgb(131, 139, 10); 
+  border: solid 1px;
+  border-radius: 5px;
+  
+}
+
+
+.custom-dropdown-toggle:hover {
+  background-color: #343a40; 
+  color: #ffffff; 
+}
+
+/*Dropdown menu styling end*/
   /*nav bar gif end*/
   .title-page, .p-title
 {
@@ -135,9 +160,9 @@
 }
 
 .cta-image {
-    width: 150px; /* Adjust the width as needed */
-    height: auto; /* Maintain the aspect ratio */
-    margin: 0 20px; /* Adjust the margin as needed */
+    width: 150px; 
+    height: auto; 
+    margin: 0 20px; 
 }
 
 
@@ -166,7 +191,7 @@ margin-bottom: 30px;
 
 }
 .side-column {
-            width: 20%; /* Adjust the width as needed */
+            width: 20%; 
             display: inline-block;
             vertical-align: top;
             text-align: center;
@@ -175,14 +200,14 @@ margin-bottom: 30px;
         }
 
         .side-column img {
-            max-width: 100%; /* Ensure the image doesn't exceed the column width */
-             height: 60vh; /* Maintain the aspect ratio */
+            max-width: 100%; 
+             height: 60vh; 
              border: solid 1px;
         }
 
-        /* Style for main content */
+        
         .main-content {
-            width: 60%; /* Adjust the width as needed */
+            width: 60%; 
             display: inline-block;
             vertical-align: top;
             text-align: center;
@@ -197,19 +222,19 @@ margin-bottom: 30px;
     
     @media (max-width: 700px){
       .side-column {
-                width: 20%; /* 20% width for larger screens */
+                width: 20%; 
                 display: inline-block;
                 vertical-align: top;
             }
 
             .main-content {
-                width: 60%; /* 60% width for larger screens */
+                width: 60%; 
                 display: inline-block;
                 vertical-align: top;
             }
             .side-column img {
-            max-width: 250%; /* Ensure the image doesn't exceed the column width */
-             height: 20vh; /* Maintain the aspect ratio */
+            max-width: 250%; 
+             height: 20vh; 
              border: solid 1px;
         }
         
@@ -243,8 +268,7 @@ margin-bottom: 30px;
     
     
   }
-/* Style for the heading container */
-/* Style for the heading container */
+
 .styled-heading {
     position: relative;
     background: linear-gradient(-225deg, #231557 0%, #ebe5f0 29%, #ff1361 67%, #fff800 100%);
@@ -258,7 +282,7 @@ margin-bottom: 30px;
     border-radius: 20px;
 }
 
-/* Add pseudo-elements for shapes */
+
 .styled-heading::before {
     content: "";
     position: absolute;
@@ -294,19 +318,19 @@ margin-bottom: 30px;
    text-align: justify;
     opacity: 0;
     transition: opacity 0.3s;
-    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    padding: 10px; /* Padding around the text */
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 10px; 
    
     
   }
 
   .col:hover img {
-    transform: scale(1.05); /* Scale the image on hover */
+    transform: scale(1.05); 
   }
 
   
   .col:hover p {
-    opacity: 1; /* Show the text on hover */
+    opacity: 1; 
   }
   .featured-recipe-img {
     border: 2px solid white; 
@@ -318,8 +342,8 @@ margin-bottom: 30px;
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 2 columns with equal width */
-    gap: 20px; /* Adjust the gap as needed */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
     
   }
 
@@ -328,8 +352,8 @@ margin-bottom: 30px;
   }
 
   .grid img {
-    width: 70%; /* Maximum width for responsiveness */
-    height: 50vh; /* Automatically adjust the height */
+    width: 70%; 
+    height: 50vh; 
     border: solid 2px;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
@@ -339,9 +363,9 @@ margin-bottom: 30px;
   .chef-team {
     position: relative;
     display: inline-block;
-    background: #190303; /* Background color */
-    padding: 10px 20px; /* Padding to create the background */
-    color: #fff; /* Text color */
+    background: #190303; 
+    padding: 10px 20px; 
+    color: #fff; 
     border: solid 1px;
     text-align: center;
     margin-bottom: 10px;
@@ -352,7 +376,7 @@ margin-bottom: 30px;
   }
 
   .chef-team:hover {
-    background: #eaff00; /* Background color on hover */
+    background: #eaff00; 
   }
   .grid img:hover{
     background: rgb(202, 241, 110);
@@ -364,15 +388,15 @@ margin-bottom: 30px;
       
     }
     .grid img {
-    width: 70%; /* Maximum width for responsiveness */
-    height: 20vh; /* Automatically adjust the height */
+    width: 70%; 
+    height: 20vh; 
     border: solid 2px;
     
   }
   }
   /*recipe generator start*/
   .blog-section {
-  background-color:black; /* Set a background color for the blog section */
+  background-color:black; 
   padding: 50px 0;
 }
 
@@ -388,7 +412,7 @@ margin-bottom: 30px;
 .expert-chef:hover{
   transform: scale(1.1);
 }
-/* CSS for the blog cards */
+
 .blog-card {
   background-color:white;
   border-radius: 5px;
@@ -398,7 +422,7 @@ margin-bottom: 30px;
   text-align: center;
 }
 
-/* Style the blog post images */
+
 .blog-card img {
   max-width: 100%;
   height: 400px;
@@ -409,25 +433,24 @@ margin-bottom: 30px;
   background-color: yellow;
   transform: scale(1.1);
 }
-/* Style the blog titles */
+
 .blog-title {
   font-size: 1.5rem;
   color: #333;
 }
 
-/* Style the blog date */
+
 .blog-date {
   font-size: 0.9rem;
   color: #777;
 }
 
-/* Style the blog excerpts */
 .blog-excerpt {
   font-size: 1rem;
   color: #555;
 }
 
-/* Style the "Read More" buttons */
+
 .btn-primary {
   background-color: #007bff;
   color: #fff;
@@ -448,7 +471,7 @@ margin-bottom: 30px;
   
 }
 
-/* Center the entire blog card content */
+
 .blog-card {
   display: flex;
   flex-direction: column;
@@ -668,48 +691,50 @@ h1, h2, h3, h4, h5, h6 {
     left: 100%;
   }
 }
-
   /* footer section end*/
 </style>
       </style>
-    <nav class="navbar navbar-expand-lg bg-dark">
+      <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="./cookbook.png" alt="" width="100px"></a>
-          
-
+      
           <button id="custom-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+          </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#Recipe">Recipes</a>
+              <li class="nav-item dropdown"> 
+                <a class="nav-link text-white dropdown-toggle" href="#" id="recipesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Recipes
+                </a>
+                <div class="dropdown-menu bg-dark" aria-labelledby="recipesDropdown">
+                  <a class="dropdown-item text-white custom-dropdown-item" href="#">Chicken Rice Pulao</a> 
+                  <a class="dropdown-item text-white custom-dropdown-item" href="#">Recipe 2</a>
+                  <a class="dropdown-item text-white custom-dropdown-item" href="#">Recipe 3</a>
+                </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#chef">Our Chefs</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">About us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Contact us</a>
-            </li>
-            
+              </li>
             </ul>
             <div class="navbar-special">
-              <img src="./food/chef gif.gif" alt="Fire Animation" class="centered-animation"> 
-          </div>
-            
-            
+              <img src="./food/chef gif.gif" alt="Fire Animation" class="centered-animation">
+            </div>
+      
             <form class="d-flex" role="search">
-                
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
-          
         </div>
       </nav>
       <section>
@@ -732,8 +757,6 @@ h1, h2, h3, h4, h5, h6 {
       <section>
         <div class="side-column left-column">
           <img src="./food/food 4.jpeg" alt="">
-          
-          <!-- Content for the left side column goes here -->
       </div>
       <div class="main-content">
         <div class="cook-book1">
@@ -742,8 +765,6 @@ h1, h2, h3, h4, h5, h6 {
       </div>
       <div class="side-column right-column">
         <img src="./food/food 3.jpeg" alt="">
-        
-        <!-- Content for the right side column goes here -->
     </div>
       </section>
       <section>
